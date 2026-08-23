@@ -35,15 +35,16 @@ export const RenderSplash = ({ onComplete }: RenderSplashProps) => {
   }, []);
 
   useEffect(() => {
-    if (progress < 25) setStatusText(statuses[0]);
-    else if (progress < 50) setStatusText(statuses[1]);
-    else if (progress < 75) setStatusText(statuses[2]);
-    else if (progress < 95) setStatusText(statuses[3]);
-    else setStatusText(statuses[4]);
+    if (progress < 25) setStatusText(statuses[0]!);
+    else if (progress < 50) setStatusText(statuses[1]!);
+    else if (progress < 75) setStatusText(statuses[2]!);
+    else if (progress < 95) setStatusText(statuses[3]!);
+    else setStatusText(statuses[4]!);
   }, [progress]);
 
   useEffect(() => {
-    if (progress >= 100) {
+    if (progress < 100) return;
+    {
       const delay = setTimeout(onComplete, 700);
       return () => clearTimeout(delay);
     }
