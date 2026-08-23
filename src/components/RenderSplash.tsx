@@ -130,7 +130,7 @@ export const RenderSplash = ({ onComplete }: RenderSplashProps) => {
               }}
             />
             <img
-              src={melbetLogo.url}
+              src={melbetLogo}
               alt="7ARFOUSH VIP"
               className="pointer-events-none h-full w-full select-none object-cover"
               referrerPolicy="no-referrer"

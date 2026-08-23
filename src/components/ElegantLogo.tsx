@@ -52,7 +52,7 @@ export const ElegantLogo = ({ className, size = 'md' }: ElegantLogoProps) => {
           sizeMap[size]
         )}>
           <img 
-            src={melbetLogo.url}
+            src={melbetLogo}
             alt="7ARFOUSH VIP Logo" 
             className="w-full h-full object-cover select-none pointer-events-none hover:scale-110 transition-transform duration-700"
             referrerPolicy="no-referrer"

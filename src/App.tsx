@@ -763,7 +763,7 @@ export default function App() {
                   style={{ background: `${GOLD}26` }}
                 />
                 <img
-                  src={melbetLogo.url}
+                  src={melbetLogo}
                   referrerPolicy="no-referrer"
                   alt="7ARFOUSH logo"
                   width={88}
